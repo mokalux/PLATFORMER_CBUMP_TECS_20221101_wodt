@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="169" height="113" tilewidth="32" tileheight="32" infinite="0" nextlayerid="53" nextobjectid="1648">
+ <editorsettings>
+  <export target="test03.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="images" tilewidth="0" tileheight="0" tilecount="0" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+ </tileset>
+ <tileset firstgid="1" name="refs" tilewidth="194" tileheight="193" tilecount="2" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="194" height="193" source="refs/Ch08_Body_0004.png"/>
+  </tile>
+  <tile id="1">
+   <image width="44" height="193" source="refs/Ch08_Body_0005.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="pexel" tilewidth="5403" tileheight="3602" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <image width="5403" height="3602" source="../../../../../../../../../../Z_DATAS/GFX/pexels/abstract/pexels-steve-johnson-1698394.jpg"/>
+  </tile>
+ </tileset>
+ <objectgroup id="47" name="pexel" opacity="0.44" tintcolor="#5555ff"/>
+ <group id="20" name="PARTICLES">
+  <objectgroup color="#ffaaff" id="10" name="particles_bg"/>
+  <objectgroup color="#ffaa7f" id="11" name="particles_mg"/>
+  <objectgroup color="#ffaa00" id="12" name="particles_fg"/>
+ </group>
+ <group id="27" name="LIGHTINGS">
+  <objectgroup id="29" name="lightings"/>
+ </group>
+ <group id="25" name="SHADOWS">
+  <objectgroup id="26" name="shadows"/>
+ </group>
+ <group id="6" name="IMAGES_DECO_BG">
+  <objectgroup color="#00ff7f" id="15" name="bg2_deco_backB"/>
+  <objectgroup color="#00ffff" id="16" name="bg2_deco_backA"/>
+  <objectgroup color="#55ff00" id="7" name="bg2_deco_base"/>
+  <objectgroup color="#55ff7f" id="17" name="bg2_deco_frontA"/>
+  <objectgroup id="30" name="bg2_deco_frontB"/>
+  <objectgroup color="#55ffff" id="18" name="bg1_deco_backB"/>
+  <objectgroup id="35" name="bg1_deco_backA"/>
+  <objectgroup id="34" name="bg1_deco_base"/>
+  <objectgroup id="33" name="bg1_deco_frontA"/>
+  <objectgroup id="31" name="bg1_deco_frontB"/>
+ </group>
+ <group id="36" name="IMAGES_DECO_FG">
+  <objectgroup color="#55ffff" id="41" name="fg1_deco_backB"/>
+  <objectgroup id="40" name="fg1_deco_backA"/>
+  <objectgroup id="39" name="fg1_deco_base"/>
+  <objectgroup id="38" name="fg1_deco_frontA"/>
+  <objectgroup id="37" name="fg1_deco_frontB"/>
+ </group>
+ <group id="19" name="ACTORS">
+  <objectgroup color="#aaffff" id="21" name="actors_bg">
+   <object id="538" name="coinA" x="760" y="3280">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="544" name="coinA" x="856" y="3280">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="545" name="coinA" x="1080" y="3280">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="546" name="coinA" x="1176" y="3280">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="547" name="coinA" x="968" y="3280">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="548" name="coinA" x="1120" y="3264">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="549" name="coinA" x="1216" y="3264">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="550" name="coinA" x="1440" y="3264">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="551" name="coinA" x="1472" y="3184">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="552" name="coinA" x="1328" y="3264">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="553" name="coinA" x="1536" y="3160">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="554" name="coinA" x="1632" y="3160">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="555" name="coinA" x="1816" y="3232">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="556" name="coinA" x="2104" y="3200">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="557" name="coinA" x="1744" y="3184">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="558" name="coinA" x="1888" y="3312">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="559" name="coinA" x="1976" y="3336">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="560" name="coinA" x="2176" y="3352">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="561" name="coinA" x="2272" y="3352">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="562" name="coinA" x="2064" y="3352">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="563" name="coinA" x="2424" y="3248">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="564" name="coinA" x="2496" y="3400">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="565" name="coinA" x="2720" y="3400">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="566" name="coinA" x="2816" y="3400">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="567" name="coinA" x="2608" y="3400">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="568" name="coinA" x="2768" y="3344">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="569" name="coinA" x="2928" y="3416">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="570" name="coinA" x="3152" y="3416">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="571" name="coinA" x="3248" y="3416">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="572" name="coinA" x="3040" y="3416">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="573" name="coinA" x="2880" y="3224">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="574" name="coinA" x="2976" y="3224">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="575" name="coinA" x="3200" y="3224">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="576" name="coinA" x="3296" y="3224">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="577" name="coinA" x="3088" y="3224">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="578" name="coinA" x="3344" y="3440">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="579" name="coinA" x="3440" y="3440">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="580" name="coinA" x="3664" y="3440">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="581" name="coinA" x="3760" y="3440">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="582" name="coinA" x="3552" y="3440">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="583" name="coinA" x="472" y="3472">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="613" name="coinA" x="504" y="3312">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="614" name="coinA" x="472" y="3440">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="615" name="coinA" x="472" y="3408">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="616" name="coinA" x="472" y="3376">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="617" name="coinA" x="472" y="3344">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="618" name="coinA" x="536" y="3312">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="619" name="coinA" x="472" y="3312">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="622" name="coinA" x="568" y="3280">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="623" name="coinA" x="600" y="3248">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="624" name="coinA" x="632" y="3216">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="625" name="coinA" x="664" y="3248">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="626" name="coinA" x="696" y="3280">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+   <object id="627" name="coinA" x="728" y="3312">
+    <polygon points="0,0 16,0 0,-16 -16,0 0,16 16,0"/>
+   </object>
+  </objectgroup>
+  <objectgroup color="#aaff7f" id="9" name="actors_mg">
+   <object id="5" name="player1" x="192" y="3400">
+    <polygon points="0,0 32,0 0,-48 -32,0 0,48 32,0"/>
+   </object>
+   <object id="28" name="nmeA" x="2048" y="3056">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="232" name="nmeA" x="288" y="3424">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="628" name="nmeA" x="2832" y="3144">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="629" name="nmeA" x="2640" y="3128">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="630" name="nmeA" x="2992" y="3304">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="631" name="nmeA" x="3136" y="3128">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="632" name="nmeA" x="4000" y="3264">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="633" name="nmeA" x="3584" y="3208">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="634" name="nmeA" x="3744" y="3168">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="635" name="nmeA" x="5040" y="3296">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="636" name="nmeA" x="4800" y="3312">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="637" name="nmeA" x="4576" y="3312">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="638" name="nmeA" x="4352" y="3288">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="639" name="nmeA" x="3424" y="3328">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="640" name="nmeA" x="3264" y="3200">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="647" name="nmeA" x="4160" y="3256">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="682" name="nmeA" x="5104" y="3200">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="683" name="nmeA" x="4864" y="3216">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+   <object id="684" name="nmeA" x="4640" y="3216">
+    <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
+   </object>
+  </objectgroup>
+  <objectgroup color="#aaff00" id="22" name="actors_fg"/>
+ </group>
+ <group id="23" name="SHAPES_DECO">
+  <objectgroup color="#ffff7f" id="2" name="shapes_bg">
+   <object id="1627" x="3560" y="2936">
+    <polygon points="0,0 -216,40 -240,344 16,376 43.2941,253.176 48,200 0,184 -40,184 -48,216 -8,224 -32,296 -176,264 -168,88 24,56"/>
+   </object>
+   <object id="1628" x="3688" y="3088">
+    <polygon points="0,0 16,208 64,192 56,-16"/>
+   </object>
+   <object id="1629" x="3688" y="3008">
+    <polygon points="0,0 0,-64 48,-64 48,0"/>
+   </object>
+   <object id="1630" x="3848" y="2984">
+    <polygon points="0,0 -8,304 128,304 176,264 176,64 104,0 16,0 16,48 96,56 128,120 128,240 96,272 16,264 16,0"/>
+   </object>
+   <object id="1631" x="4104" y="3024">
+    <polygon points="0,0 -16,248 160,256 160,200 40,200 40,152 80,152 80,112 32,104 32,24 144,8 128,-48"/>
+   </object>
+   <object id="1632" x="4320" y="3272">
+    <polygon points="0,0 -8,-296 168,-304 192,-240 184,-152 48,-152 48,-184 144,-184 152,-232 128,-272 32,-264 48,-184 48,-152 88,-152 144,-96 176,-48 200,-8 152,8 120,-56 48,-152 48,-8"/>
+   </object>
+   <object id="1633" x="4592" y="3024">
+    <polygon points="0,0 -40,232 120,232 160,-56 8,0 8,56 112,8 128,8 120,56 88,200 0,192 8,56 8,0"/>
+   </object>
+   <object id="1634" x="4976" y="3000">
+    <polygon points="0,0 -64,-8 -120,0 -128,96 -8,136 -8,232 -160,272 -168,224 -64,192 -64,144 -120,136 -160,104 -152,-24 0,-24"/>
+   </object>
+  </objectgroup>
+  <objectgroup color="#ffff00" id="4" name="shapes_fg"/>
+ </group>
+ <group id="24" name="SHAPES_PHYSICS" locked="1">
+  <objectgroup color="#55aa7f" id="50" name="springs">
+   <object id="512" x="960" y="3504" width="64" height="16"/>
+   <object id="522" x="1552" y="3224" width="64" height="16"/>
+   <object id="530" x="2288" y="3472" width="64" height="48"/>
+  </objectgroup>
+  <objectgroup color="#55aaff" id="51" name="mvplatforms">
+   <object id="523" name="x512" x="736" y="3360" width="128" height="16"/>
+   <object id="526" name="y100" x="2880" y="3368" width="240" height="16"/>
+   <object id="528" name="x304y248" x="2552" y="3296" width="264" height="16"/>
+   <object id="1643" name="x2072" x="3200" y="3280" width="128" height="16"/>
+  </objectgroup>
+  <objectgroup color="#aa55ff" id="49" name="ptplatforms">
+   <object id="506" x="2016" y="3424" width="192" height="32"/>
+   <object id="516" x="2016" y="3264" width="192" height="32"/>
+   <object id="518" x="2016" y="3104" width="192" height="32"/>
+   <object id="521" x="2016" y="2944" width="192" height="32"/>
+   <object id="1645" x="3200" y="3368" width="640" height="32"/>
+   <object id="1646" x="3936" y="3376" width="640" height="32"/>
+   <object id="1647" x="4672" y="3376" width="600" height="32"/>
+  </objectgroup>
+  <objectgroup color="#0000ff" id="48" name="ladders">
+   <object id="507" x="2400" y="2848" width="56" height="640"/>
+  </objectgroup>
+  <objectgroup color="#ff55ff" id="52" name="walls"/>
+  <objectgroup color="#ff0000" id="3" name="floor">
+   <object id="403" name="trp" x="-32" y="0" width="64" height="3616"/>
+   <object id="461" x="32" y="3520" width="5344" height="96"/>
+   <object id="529" name="trp" x="5376" y="0" width="64" height="3616"/>
+   <object id="531" x="512" y="3360" width="224" height="160"/>
+   <object id="533" x="1248" y="3360" width="224" height="160"/>
+   <object id="535" x="1472" y="3240" width="224" height="280"/>
+   <object id="536" x="1696" y="3360" width="224" height="160"/>
+   <object id="537" x="1696" y="3296" width="64" height="64"/>
+  </objectgroup>
+ </group>
+ <objectgroup color="#00ff00" id="13" name="refs">
+  <object id="412" name="jumpheight" x="32" y="3360" width="64" height="160"/>
+  <object id="532" name="jumpheight" x="736" y="3392" width="512" height="16"/>
+  <object id="1644" name="jumpheight" x="3200" y="3296" width="2072" height="16"/>
+ </objectgroup>
+</map>

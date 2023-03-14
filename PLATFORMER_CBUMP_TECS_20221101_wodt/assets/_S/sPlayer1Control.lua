@@ -22,7 +22,9 @@ function SPlayer1Control:onKeyDown(e)
 	if e.keyCode == KeyCode.UP then self.player1.isup = true end
 	if e.keyCode == KeyCode.DOWN then self.player1.isdown = true end
 	-- actions
-	if e.keyCode == KeyCode.W then self.player1.isaction1 = true end
+	if e.keyCode == KeyCode.W or e.keyCode == KeyCode.SPACE then
+		self.player1.isaction1 = true
+	end
 end
 
 function SPlayer1Control:onKeyUp(e)
@@ -30,6 +32,11 @@ function SPlayer1Control:onKeyUp(e)
 	if e.keyCode == KeyCode.LEFT then self.player1.isleft = false end
 	if e.keyCode == KeyCode.RIGHT then self.player1.isright = false end
 	if e.keyCode == KeyCode.UP then
+		if self.player1.body.vy >= -18 and self.player1.body.vy < 18 then -- variable jump height???
+			self.player1.body.vy += 4
+		else
+			self.player1.body.vy += 8
+		end
 		self.player1.isup = false
 		self.player1.wasup = false -- prevent constant jumps
 	end
@@ -38,5 +45,11 @@ function SPlayer1Control:onKeyUp(e)
 		self.player1.wasdown = false -- prevent constant going down ptpf
 	end
 	-- actions
-	if e.keyCode == KeyCode.W then self.player1.isaction1 = false end
+	if e.keyCode == KeyCode.W or e.keyCode == KeyCode.SPACE then
+		self.player1.isaction1 = false
+	end
+	-- restart if deaded
+--	if self.player1.isdead then
+		if e.keyCode == KeyCode.R then self.player1.restart = true end
+--	end
 end

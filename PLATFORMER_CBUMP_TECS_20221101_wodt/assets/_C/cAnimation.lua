@@ -2,7 +2,7 @@ CAnimation = Core.class()
 
 function CAnimation:init(xspritesheetpath, xcols, xrows, xanimspeed, xoffx, xoffy, sx, sy)
 	-- animation
-	self.currentanim = g_ANIM_DEFAULT
+	self.curranim = g_ANIM_DEFAULT
 	self.frame = 0
 	self.animspeed = xanimspeed
 	self.animtimer = self.animspeed

@@ -23,14 +23,19 @@ function EActor:init(xspritelayer, xparams)
 	params.jumpspeed = xparams.jumpspeed or nil
 	params.dx = xparams.dx or nil
 	params.dy = xparams.dy or nil
-	params.defaultmass = xparams.defaultmass or 1
+	params.defaultmass = xparams.defaultmass or 0.1
 	params.motionai = xparams.motionai or nil
+	params.dokeep = xparams.dokeep or nil
 	-- params
 	self.x = params.x
 	self.y = params.y
 	self.sx = params.sx
 	self.sy = params.sy
 	self.flip = params.flip
+	self.dokeep = params.dokeep
+	self.coyotetimer = 10
+	self.currcoyotetimer = self.coyotetimer
+	self.health = params.health or 1
 	-- let's go!
 	if params.shape then
 		self.sprite = params.shape
@@ -65,16 +70,16 @@ function EActor:init(xspritelayer, xparams)
 		--function CBody:init(xspeed, xjumpspeed)
 		self.body = CBody.new(params.speed, params.jumpspeed)
 		self.body.defaultmass = params.defaultmass
-		self.body.currentmass = self.body.defaultmass
+		self.body.currmass = self.body.defaultmass
 	end
 	if params.dx or params.dy then
 		-- AI
-		if params.motionai then
+		if params.motionai then -- motion ai doesn't apply gravity
 			self.motionAI = CAI.new(self.x, self.y, params.dx, params.dy)
 			-- start moving for the AI
 			if self.motionAI.dx then self.isright = true end
 			if self.motionAI.dy then self.isdown = true end
-		else
+		else -- actor ai applies gravity
 			self.actorAI = CAI.new(self.x, self.y, params.dx, params.dy)
 			-- start moving for the AI
 			if self.actorAI.dx then self.isright = true

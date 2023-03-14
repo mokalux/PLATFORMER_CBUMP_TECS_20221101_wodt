@@ -14,12 +14,12 @@ end
 
 local checkanim
 function SAnimation:process(ent, dt) -- tiny function
---	checkanim = ent.animation.currentanim
+--	checkanim = ent.animation.curranim
 --	if not ent.animation.anims[checkanim] then
 --		checkanim = g_ANIM_DEFAULT -- default to g_ANIM_DEFAULT
 --	end
 	-- new luau ternary operator (no end at the end), it's 1 line and seems faster? XXX
-	checkanim = if ent.animation.anims[ent.animation.currentanim] then ent.animation.currentanim else g_ANIM_DEFAULT
+	checkanim = if ent.animation.anims[ent.animation.curranim] then ent.animation.curranim else g_ANIM_DEFAULT
 
 	ent.animation.animtimer = ent.animation.animtimer - dt
 	if ent.animation.animtimer <= 0 then

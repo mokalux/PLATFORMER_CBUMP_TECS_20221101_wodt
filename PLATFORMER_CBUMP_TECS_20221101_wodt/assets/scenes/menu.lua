@@ -3,6 +3,7 @@ Menu = Core.class(Sprite)
 function Menu:init()
 	-- bg
 	application:setBackgroundColor(0x12aaAA)
+	local bgimg = Bitmap.new(Texture.new("gfx/ui/rpgpp_lt_models_vgood.png"))
 	-- buttons
 	self.selector = 1
 	self.sound = Sound.new("audio/sfx_sounds_button1.wav") -- shared amongst ui buttons
@@ -15,47 +16,29 @@ function Menu:init()
 	local mybtn = ButtonMonster.new({
 		scalexup=1, scalexdown=1.2,
 		pixelcolorup=pixelcolor, pixelalphaup=pixelalphaup, pixelalphadown=pixelalphadown,
-		text="GAME", ttf=font01, textcolorup=textcolorup, textcolordown=textcolordown,
+		text="test level1", ttf=font01, textcolorup=textcolorup, textcolordown=textcolordown,
 		isautoscale=false, pixelpaddingx=64*4.5, pixelpaddingy=64*1.5,
 		channel=self.channelS, sound=self.sound, volume=self.volume,
 	}, 1)
 	local mybtn02 = ButtonMonster.new({
 		scalexup=1, scalexdown=1.2,
 		pixelcolorup=pixelcolor, pixelalphaup=pixelalphaup, pixelalphadown=pixelalphadown,
-		text="XXX", ttf=font01, textcolorup=textcolorup, textcolordown=textcolordown,
+		text="test levelX", ttf=font01, textcolorup=textcolorup, textcolordown=textcolordown,
 		isautoscale=false, pixelpaddingx=64*4.5, pixelpaddingy=64*1.5,
 		channel=self.channelS, sound=self.sound, volume=self.volume,
 	}, 2)
-	local mybtn03 = ButtonMonster.new({
-		scalexup=1, scalexdown=1.2,
-		pixelcolorup=pixelcolor, pixelalphaup=pixelalphaup, pixelalphadown=pixelalphadown,
-		text="YYY", ttf=font01, textcolorup=textcolorup, textcolordown=textcolordown,
-		isautoscale=false, pixelpaddingx=64*4.5, pixelpaddingy=64*1.5,
-		channel=self.channelS, sound=self.sound, volume=self.volume,
-	}, 3)
-	local mybtn04 = ButtonMonster.new({
-		scalexup=1, scalexdown=1.2,
-		pixelcolorup=pixelcolor, pixelalphaup=pixelalphaup, pixelalphadown=pixelalphadown,
-		text="ZZZ", ttf=font01, textcolorup=textcolorup, textcolordown=textcolordown,
-		isautoscale=false, pixelpaddingx=64*4.5, pixelpaddingy=64*1.5,
-		channel=self.channelS, sound=self.sound, volume=self.volume,
-	}, 4)
+	mybtn02:setDisabled(true)
 	-- positions
 	mybtn:setPosition(1.5*myappwidth/2, 3.5*myappheight/10)
 	mybtn02:setPosition(1.5*myappwidth/2, 5*myappheight/10)
-	mybtn03:setPosition(1.5*myappwidth/2, 6.5*myappheight/10)
-	mybtn04:setPosition(1.5*myappwidth/2, 8*myappheight/10)
 	-- order
+	self:addChild(bgimg)
 	self:addChild(mybtn)
 	self:addChild(mybtn02)
-	self:addChild(mybtn03)
-	self:addChild(mybtn04)
 	-- btns table
 	self.btns = {}
 	self.btns[#self.btns + 1] = mybtn
 	self.btns[#self.btns + 1] = mybtn02
-	self.btns[#self.btns + 1] = mybtn03
-	self.btns[#self.btns + 1] = mybtn04
 	-- btns listeners
 	for k, v in ipairs(self.btns) do
 		v:addEventListener("clicked", function() self:goto() end) -- click event

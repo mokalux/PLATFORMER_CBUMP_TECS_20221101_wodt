@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="169" height="113" tilewidth="32" tileheight="32" infinite="0" nextlayerid="53" nextobjectid="1648">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="169" height="113" tilewidth="32" tileheight="32" infinite="0" nextlayerid="53" nextobjectid="1791">
  <editorsettings>
   <export target="test03.lua" format="lua"/>
  </editorsettings>
  <tileset firstgid="1" name="images" tilewidth="0" tileheight="0" tilecount="0" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
  </tileset>
- <tileset firstgid="1" name="refs" tilewidth="194" tileheight="193" tilecount="2" columns="0">
+ <tileset firstgid="1" name="refs" tilewidth="0" tileheight="0" tilecount="0" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
-  <tile id="0">
-   <image width="194" height="193" source="refs/Ch08_Body_0004.png"/>
-  </tile>
-  <tile id="1">
-   <image width="44" height="193" source="refs/Ch08_Body_0005.png"/>
-  </tile>
  </tileset>
  <tileset firstgid="3" name="pexel" tilewidth="5403" tileheight="3602" tilecount="1" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
@@ -218,13 +212,13 @@
    </object>
   </objectgroup>
   <objectgroup color="#aaff7f" id="9" name="actors_mg">
-   <object id="5" name="player1" x="192" y="3400">
+   <object id="5" name="player1" x="128" y="3168">
     <polygon points="0,0 32,0 0,-48 -32,0 0,48 32,0"/>
    </object>
    <object id="28" name="nmeA" x="2048" y="3056">
     <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
    </object>
-   <object id="232" name="nmeA" x="288" y="3424">
+   <object id="232" name="nmeA" x="912" y="3288">
     <polygon points="0,0 32,0 0,-32 -32,0 0,32 32,0"/>
    </object>
    <object id="628" name="nmeA" x="2832" y="3144">
@@ -307,17 +301,21 @@
    <object id="1634" x="4976" y="3000">
     <polygon points="0,0 -64,-8 -120,0 -128,96 -8,136 -8,232 -160,272 -168,224 -64,192 -64,144 -120,136 -160,104 -152,-24 0,-24"/>
    </object>
+   <object id="1783" x="920" y="3512" width="64" height="8"/>
+   <object id="1785" x="1552" y="3232" width="64" height="8"/>
+   <object id="1786" x="2288" y="3504" width="64" height="16"/>
+   <object id="1787" x="2392" y="2848" width="72" height="672"/>
   </objectgroup>
   <objectgroup color="#ffff00" id="4" name="shapes_fg"/>
  </group>
- <group id="24" name="SHAPES_PHYSICS" locked="1">
+ <group id="24" name="SHAPES_PHYSICS">
   <objectgroup color="#55aa7f" id="50" name="springs">
-   <object id="512" x="960" y="3504" width="64" height="16"/>
-   <object id="522" x="1552" y="3224" width="64" height="16"/>
-   <object id="530" x="2288" y="3472" width="64" height="48"/>
+   <object id="512" x="928" y="3520" width="48" height="8"/>
+   <object id="522" x="1560" y="3240" width="48" height="8"/>
+   <object id="530" x="2296" y="3520" width="48" height="8"/>
   </objectgroup>
   <objectgroup color="#55aaff" id="51" name="mvplatforms">
-   <object id="523" name="x512" x="736" y="3360" width="128" height="16"/>
+   <object id="523" name="x1024" x="736" y="3248" width="128" height="16"/>
    <object id="526" name="y100" x="2880" y="3368" width="240" height="16"/>
    <object id="528" name="x304y248" x="2552" y="3296" width="264" height="16"/>
    <object id="1643" name="x2072" x="3200" y="3280" width="128" height="16"/>
@@ -330,25 +328,30 @@
    <object id="1645" x="3200" y="3368" width="640" height="32"/>
    <object id="1646" x="3936" y="3376" width="640" height="32"/>
    <object id="1647" x="4672" y="3376" width="600" height="32"/>
+   <object id="1779" x="3096" y="3216" width="216" height="32"/>
+   <object id="1789" x="2360" y="2832" width="136" height="16"/>
   </objectgroup>
   <objectgroup color="#0000ff" id="48" name="ladders">
-   <object id="507" x="2400" y="2848" width="56" height="640"/>
+   <object id="507" x="2400" y="2856" width="56" height="568"/>
   </objectgroup>
   <objectgroup color="#ff55ff" id="52" name="walls"/>
   <objectgroup color="#ff0000" id="3" name="floor">
    <object id="403" name="trp" x="-32" y="0" width="64" height="3616"/>
    <object id="461" x="32" y="3520" width="5344" height="96"/>
    <object id="529" name="trp" x="5376" y="0" width="64" height="3616"/>
-   <object id="531" x="512" y="3360" width="224" height="160"/>
+   <object id="531" x="552" y="3360" width="224" height="160"/>
    <object id="533" x="1248" y="3360" width="224" height="160"/>
    <object id="535" x="1472" y="3240" width="224" height="280"/>
    <object id="536" x="1696" y="3360" width="224" height="160"/>
    <object id="537" x="1696" y="3296" width="64" height="64"/>
+   <object id="1780" x="3320" y="3136" width="1840" height="40"/>
+   <object id="1781" x="224" y="3392" width="192" height="128"/>
+   <object id="1784" x="1024" y="3264" width="80" height="256"/>
   </objectgroup>
  </group>
  <objectgroup color="#00ff00" id="13" name="refs">
   <object id="412" name="jumpheight" x="32" y="3360" width="64" height="160"/>
-  <object id="532" name="jumpheight" x="736" y="3392" width="512" height="16"/>
+  <object id="532" name="jumpheight" x="736" y="3344" width="512" height="16"/>
   <object id="1644" name="jumpheight" x="3200" y="3296" width="2072" height="16"/>
  </objectgroup>
 </map>

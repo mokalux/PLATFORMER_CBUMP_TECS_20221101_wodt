@@ -20,8 +20,8 @@ function EAnimatedImages:init(xspritelayer, xtexpath, x, y)
 	self.animation:createAnim(g_ANIM_DEFAULT, 1, 11) -- magik XXX
 	self.animation.myanimsimgs = nil -- free some memory?
 	-- test
-	self.animation.currentframe = math.random(#self.animation.anims[g_ANIM_DEFAULT])
---	print(self.animation.currentframe) -- trying to start at different frames but doesn't work :-(
+	self.animation.currframe = math.random(#self.animation.anims[g_ANIM_DEFAULT])
+--	print(self.animation.currframe) -- trying to start at different frames but doesn't work :-(
 	self.sprite:setScale(self.sx, self.sy)
 	self.sprite:setPosition(self.x, self.y)
 end

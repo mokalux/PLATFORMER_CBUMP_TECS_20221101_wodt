@@ -1,29 +1,10 @@
--- beautify
---http://patorjk.com/software/taag/#p=display&f=Big&t=GIDEROS
-
--- plugins
-require "scenemanager"
-require "easing"
-
--- GLOBALS
--- app
-myappleft, myapptop, myappright, myappbot = application:getLogicalBounds()
-myappwidth, myappheight = myappright - myappleft, myappbot - myapptop
-
-if (application:getDeviceInfo() == "Windows" or application:getDeviceInfo() == "Win32") then
-	if not application:isPlayerMode() then
-		local sw, sh = application:get("screenSize") -- the user's screen size!
-		application:set("windowTitle", "GIDEROS PLATFORMER CBUMP TECS")
-		application:set("windowPosition", (sw - myappwidth) * 0.5, (sh - myappheight) * 0.5)
---		application:set("cursorPosition", 0, 0)
-	end
-end
-
 -- game
 tiled_levels = {}
-tiled_levels[1] = loadfile("tiled/levels/test03.lua")()
-g_currentlevel = 1
-g_gravity = 9.8
+--tiled_levels[1] = loadfile("tiled/levels/garden.lua")()
+--tiled_levels[1] = loadfile("tiled/levels/tln.lua")()
+tiled_levels[1] = loadfile("tiled/levels/rpgpp_lt_models_vgood.lua")()
+g_currlevel = 1
+g_gravity = 6 -- 9.8
 
 -- anims, faster accessed via int than string
 g_ANIM_DEFAULT = 1
@@ -46,12 +27,12 @@ g_ANIM_ATTACK1_L = 17
 g_ANIM_ATTACK1_R = 18
 g_ANIM_ATTACK2_L = 19
 g_ANIM_ATTACK2_R = 20
-
--- global fonts (see also composite font)
-font00 = TTFont.new("fonts/Cabin-Regular-TTF.ttf", (12*10)//1)
-font01 = TTFont.new("fonts/Cabin-Regular-TTF.ttf", (12*5.2)//1)
-font02 = TTFont.new("fonts/Cabin-Regular-TTF.ttf", (12*4)//1)
-font10 = TTFont.new("fonts/Cabin-Regular-TTF.ttf", (12*3)//1)
+g_ANIM_LOSE1_L = 21
+g_ANIM_LOSE1_R = 22
+g_ANIM_LOSE2_L = 23
+g_ANIM_LOSE2_R = 24
+g_ANIM_STOMP_L = 25
+g_ANIM_STOMP_R = 26
 
 -- scene manager
 scenemanager = SceneManager.new(
